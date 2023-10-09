@@ -1,0 +1,301 @@
+.App {
+  text-align: center;
+}
+
+body, h1, p, a {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Nav styling */
+nav {
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: white;
+  margin-right: 15px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00aaff;  /* Accent color */
+}
+
+/* Main content */
+div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 15px;
+  color: #444;
+}
+
+p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* Add some space between the nav and the content */
+nav + div {
+  margin-top: 20px;
+}
+
+/* For the projects page, you might have a list of projects. Let's add some styles in anticipation */
+.project {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s;
+}
+
+.project:hover {
+  box-shadow: 0px 0px 10px rgba(0, 170, 255, 0.3); /* Light blue shadow on hover */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  /* Full viewport height */
+}
+
+header {
+  background-color: #00aaff;  /* Accent color */
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 1%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #f4f4f4;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin: 0 15px;
+  padding: 10px 15px;
+  color: #333;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #00aaff;  /* Accent color */
+  color: white;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto;  /* Pushes footer to bottom */
+}
+
+/* Ensure the body and html fill the full height of the viewport */
+body, html {
+  height: 100%;
+}
+
+/* Home Component Styles */
+.home-container {
+  max-width: 800px; /* Limiting the width of the content for readability */
+  margin: 0 auto;   /* Centering the content horizontally */
+  padding: 20px;
+  background-color: white; /* Giving a white background for contrast */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 5px; /* Rounded corners for a modern look */
+}
+
+.home-container h1 {
+  font-size: 2.5em; /* Making the title larger */
+  margin-bottom: 20px; /* Adding some space below the title */
+  text-align: center; /* Centering the title text */
+}
+
+.home-container p {
+  text-align: center;
+  align-items: center;
+  font-size: 1.2em; /* Making the paragraph text a bit larger */
+  line-height: 1.5; /* Improving readability */
+  color: #555; /* Slightly darker text for better contrast */
+}
+
+/* ... Previous CSS ... */
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes the image round */
+  object-fit: cover; /* Ensures image covers the size without distortion */
+  margin: 0 auto; /* Centers the image */
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Space between each skill */
+  margin-top: 20px;
+}
+
+.skills span {
+  background-color: #00aaff;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px; /* Rounded edges for skill tags */
+  font-size: 0.9em;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00aaff;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #0088cc; /* A slightly darker blue for hover effect */
+}
+/* ... Previous CSS ... */
+
+.projects-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items vertically */
+}
+
+.project-card {
+  width: 80%; /* You can adjust this based on your design preference */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items like image, title, etc. */
+}
+
+.project-card img {
+  width: 100%; /* Make the image take full width of the card */
+  height: 200px;
+  object-fit: cover; /* Crop and resize image to fit the dimensions without stretching */
+  border-radius: 5px;
+  margin-bottom: 20px; /* Space between the image and the title */
+}
+
+.project-card h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.project-card p {
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project-card a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #00aaff;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.project-card a:hover {
+  background-color: #0088cc;
+}
+
+/* ... Previous CSS ... */
+
+.contact-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items vertically */
+}
+
+.contact-form {
+  width: 80%; /* Adjust based on your preference */
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.contact-input, .contact-textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact-textarea {
+  height: 150px; /* Adjust based on your preference */
+  resize: vertical; /* Allows the user to resize the textarea vertically */
+}
+
+.contact-button {
+  align-self: flex-start; /* Aligns the button to the start (left) */
+  padding: 10px 20px;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #0088cc;
+}
+
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  color: #00aaff;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #0088cc;
+}
+/* ... Previous CSS ... */
+
+.contact-details p {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.contact-details strong {
+  color: #333;
+}
